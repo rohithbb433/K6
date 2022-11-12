@@ -73,10 +73,3 @@ export default function () {
     Get_method.add(res.timings.waiting);
   });
 }
-
-export function handleSummary(data) {
-  console.log("Preparing the end-of-test summary...");
-  return {
-    "My_report.json": JSON.stringify(data),
-  };
-}
