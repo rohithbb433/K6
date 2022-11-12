@@ -9,6 +9,7 @@ on:
         type: choice
         options:
           - start
+
 jobs:
   test:
     runs-on: [self-hosted]
