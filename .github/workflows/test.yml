@@ -1,7 +1,14 @@
 name: Branch Perf Test
 on:
   workflow_dispatch:
-  
+   inputs:
+      env:
+        description: "Target Environment"
+        required: true
+        default: start
+        type: choice
+        options:
+          - start
 jobs:
   test:
     runs-on: [self-hosted]
