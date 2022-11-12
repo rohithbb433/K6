@@ -11,9 +11,9 @@ export const options = {
   // vus: 2,
   // duration: '10s',
   stages: [
-    { duration: "1s", target: 1 },
-    { duration: "1s", target: 1 },
-    { duration: "1s", target: 0 },
+    { duration: "10s", target: 1 },
+    { duration: "5s", target: 1 },
+    { duration: "4s", target: 0 },
   ],
   thresholds: {
     http_req_failed: ["rate<0.01"], // http errors should be less than 1%
